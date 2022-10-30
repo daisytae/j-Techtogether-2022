@@ -8,7 +8,7 @@ hydrationImage = hydrationList[0];
 hydrationImage.addEventListener("click", myFunction);
 
 function myFunction() {
-    location.href = "file:///C:/Users/mylit/OneDrive/Documents/GitHub/j-Techtogether-2022/hydration.html";
+    location.href = "j-Techtogether-2022/hydration.html";
     console.log("Hi");
  
 }
@@ -18,7 +18,7 @@ plasticImage = plasticList[0];
 plasticImage.addEventListener("click", wyFunction);
 
 function wyFunction() { 
-    location.href = "file:///C:/Users/mylit/OneDrive/Documents/GitHub/j-Techtogether-2022/plastic.html";
+    location.href = "j-Techtogether-2022/plastic.html";
     console.log("bye");
 }
 
@@ -27,7 +27,7 @@ homeImage = homeList[0];
 homeImage.addEventListener("click", ymFunction);
 
 function ymFunction() {
-    location.href = "file:///C:/Users/mylit/OneDrive/Documents/GitHub/j-Techtogether-2022/index.html";
+    location.href = "j-Techtogether-2022/index.html";
     console.log("hm");
 }
 
