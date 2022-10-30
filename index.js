@@ -7,9 +7,16 @@ hydrationImage.addEventListener("click", myFunction);
 
 function myFunction() {
     console.log("Hi");
-    document.getElementById("hydration").innerHTML = "location.href='hydration.html'";
+ 
 }
 
+const plasticList = document.getElementsByClassName("plastic");
+plasticImage = plasticList[0];
+plasticImage.addEventListener("click", wyFunction);
+
+function wyFunction() { 
+    console.log("bye");
+}
 
 
 
