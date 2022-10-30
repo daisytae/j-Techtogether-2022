@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <style> 
+      input[type=number] {
+        width: 100;
+        padding: 6px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        background-color: #eba40c;
+        color: rgb(0, 0, 0);
+      }
+    </style>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      //google.setOnLoadCallback(drawChart(1,1,1,1));
+      function drawChart(water, tea, coffee, juice) {
+        var data = google.visualization.arrayToDataTable([
+          ['Beverage', 'Consumption'],
+          ['Water', Number(water)],
+          ['Tea',   Number(tea)],
+          ['Coffee',Number(coffee)],
+          ['Juice', Number(juice)]
+        ]);
+
+        var options = {
+          title: 'Hydration',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    Water: <br><input type="number" min="0" id="water"> <br>
+    Tea: <br><input type="number" min="0" id="tea"> <br>
+    Coffee: <br><input type="number" min="0" id="coffee"> <br>
+    Juice: <br><input type="number" min="0" id="juice"> <br> <br>
+    <button type="button" onclick="getInputValue();">Draw Chart</button>
+    <script>
+      function getInputValue() {
+        let water = document.getElementById('water').value;
+        let tea = document.getElementById('tea').value;
+        let coffee = document.getElementById('coffee').value;
+        let juice = document.getElementById('juice').value;
+        drawChart(water, tea, coffee, juice)
+       
+        //alert(water);
+      }
+    </script>
+
+    <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
