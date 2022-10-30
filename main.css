@@ -3,15 +3,27 @@ html, body {
     height: 100%;
 }
 
-.hydration {
-    display: block;
-    position: sticky;
+.home {
     width: 205px;
     height: 205px;
-    margin-top: 450px;
+    margin-top: 350px;
     margin-left: 400px;
     margin-right: 0px;
 
+}
+
+.home1 {
+    width: 205px;
+    height: 205px;
+    margin-top: -500px;
+    margin-left: 200px;
+    margin-right: 0px;
+
+}
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .hydration1 {
@@ -24,16 +36,6 @@ html, body {
 
 }
 
-.hydration3 {
-    display: block;
-    width: 205px;
-    height: 205px;
-    position: justify;
-    margin-top: 30px;
-    margin-left: 390px;
-    margin-right: 0px;
-
-}
 
 
 
@@ -42,62 +44,19 @@ html, body {
     display: block;
     width: 350px;
     height: 350px;
-    margin-top: -280px;
-    margin-left: 600px;
-    margin-right: 0px;
-}
-
-.plastic2 {
-    display: block;
-    width: 350px;
-    height: 350px;
     margin-top: -285px;
-    margin-left: 700px;
-    margin-right: 0px;
-}
-
-.plastic4 {
-    display: block;
-    width: 350px;
-    height: 350px;
-    margin-top: -280px;
     margin-left: 600px;
     margin-right: 0px;
 }
 
-
-.why {
+.plastic1 {
     display: block;
-    width: 270px;
-    height: 170px;
-    margin-top: 0px;
-    margin-left: 400px;
+    width: 350px;
+    height: 350px;
+    margin-top: -205px;
+    margin-left: 30px;
     margin-right: 0px;
-
 }
-
-.why5 {
-    display: block;
-    width: 270px;
-    height: 170px;
-    margin-top: 0px;
-    margin-left: 400px;
-    margin-right: 0px;
-
-}
-
-.why6 {
-    display: block;
-    width: 270px;
-    height: 170px;
-    margin-top: 0px;
-    margin-left: 400px;
-    margin-right: 0px;
-
-}
-
-
-
 
 
 
@@ -142,15 +101,5 @@ table {
     position: center;
     text-align: center;
     margin-left: 380px;
-    margin-right: 0px;
-}
-
-table2 {
-    width: 400px;
-    height: 400px;
-    border: none;
-    position: center;
-    text-align: center;
-    margin-left: 580px;
     margin-right: 0px;
 }
